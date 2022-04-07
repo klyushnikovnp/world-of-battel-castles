@@ -11,7 +11,7 @@
       <ul>
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes.addClass('nav-item') }}>
+      <li{{ item.attributes.addClass('nav-item text-right text-md-left') }}>
         {{ link(item.title, item.url, item.attributes.addClass('nav-link text-white')) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

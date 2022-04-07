@@ -26,11 +26,13 @@ background-size: cover;
 height: inherit;
 }
 .jumbotron{background: none;}
+.navbar{padding: 0; justify-content: end;} 
 
 
 /*Content*/
 .screen2{background: url("/themes/custom/battle/images/bg-2.jpg") no-repeat top center; }
 .screen2 .description{margin-top: 7rem;}
+.screen2 img{width: 100%; height: auto;}
 .screen3{
 background: url("/themes/custom/battle/images/bg-3.jpg") no-repeat top center; 
 background-size: cover;
@@ -54,6 +56,9 @@ height: 800px;
 	position: absolute;
 	background-color:rgba(0, 0, 0, .2);
 }
+.screen4 .carousel-item{height: 800px;}
+.carousel-item.active{display: flex; align-items: center;}
+.screen4 .carousel-item .carousel-caption{bottom: auto; text-align: left; top: 10%;}
 
 /*Footer*/
 
