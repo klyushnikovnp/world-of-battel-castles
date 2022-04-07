@@ -1,0 +1,15 @@
+name: world of battle
+description: 'Theme for the site The world of battle castles'
+type: theme
+core_version_requirement: ^9
+base theme: stable
+
+libraries: 
+  - battle/bootstrap
+  - battle/custom
+ 
+regions:
+  header: Header
+  content: Content
+  left_sidebar: Left Sidebar  
+  footer: Footer

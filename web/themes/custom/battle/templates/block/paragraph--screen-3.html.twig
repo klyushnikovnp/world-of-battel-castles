@@ -1,0 +1,22 @@
+<div class="screen3 text-white py-5 text-center d-flex align-items-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 description">
+				<h5 class="sub-header">
+					{#% filter upper %}
+						{{ content.field_link }}
+					{% endfilter %#}
+					{{ content.field_link }}
+				</h5>
+				<h3 class="mb-4">
+					{#% filter upper %}
+						{{ content.field_header }}
+					{% endfilter %#}
+					{{ content.field_header }}
+				</h3>
+				<div class="col-8 mx-auto">{{ content.field_description }}</div>
+				<a class="btn btn-danger btn mt-3" href="#" role="button">ПОДРОБНЕЕ</a>
+			</div>
+		</div>
+	</div>
+</div>

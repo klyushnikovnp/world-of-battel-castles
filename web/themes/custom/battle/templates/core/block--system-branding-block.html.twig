@@ -1,0 +1,9 @@
+<div class="col-4">  
+  {% block content %}
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Главная'|t }}" />
+    </a>
+  {% endif %}
+  {% endblock %}
+</div>
