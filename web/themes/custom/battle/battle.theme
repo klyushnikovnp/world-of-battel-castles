@@ -1,0 +1,15 @@
+<?php
+
+/*
+* @Фуркция вставки блоков в необходимое место шаблона block--contacts-block.html.twig
+* 
+*/
+function battle_preprocess_block__contacts_block(&$variables) {
+	if($variables['content']['#name'] == 'svyazatsya_s_nami_'){
+	  /*вставка блока "С формой обратной связи" в шаблон блока меню block--contacts-block.html.twig*/	
+	  $block = \Drupal\block\Entity\Block::load('webform');
+	  $variables['feedback'] = \Drupal::entityTypeManager()
+		->getViewBuilder('block')
+		->view($block);
+	}	
+}  

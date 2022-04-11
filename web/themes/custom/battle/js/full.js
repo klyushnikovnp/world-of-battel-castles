@@ -3,6 +3,8 @@
 	
 	$(".carousel-item:first").addClass('active');
 	
+	$(".img-circle>img").addClass('rounded-circle');
+	
 
 	/*fixed block*/
 	$(window).scroll(function(){

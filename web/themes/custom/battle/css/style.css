@@ -60,8 +60,22 @@ height: 800px;
 .carousel-item.active{display: flex; align-items: center;}
 .screen4 .carousel-item .carousel-caption{bottom: auto; text-align: left; top: 10%;}
 
-/*Footer*/
+.hero img,
+.screen7 img,
+.partners img
+{width: 100%; height: auto;}
+.screen6{background: url("/themes/custom/battle/images/bg-6.jpg") no-repeat top center;}
+.screen6 .card-subtitle{color: #33ff99!important;}
+.screen6 .data{width: fit-content;}
+.screen6 .card-title{font-size: 1.75rem;}
+.screen7 h5{font-size: 2.5rem; color: #333;}
+.feedback-compact .header-h2{width: fit-content;} 
+#block-webform{text-align: center;}
+.form-group{text-align: left;}
 
+
+/*Footer*/
+footer{background: #f74c3c;}
  
  
  

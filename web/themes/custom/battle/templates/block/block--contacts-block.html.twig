@@ -1,0 +1,21 @@
+<div class="container py-5 feedback-compact"> 
+	<div class="row"> 
+		<div class="contacs col-lg-6">
+		  {{ title_prefix }}
+		  {% if label %}
+			 <div class="mx-auto header-h2"> 
+				<h2{{ title_attributes }}>{{ label }}</h2>
+			</div>
+		  {% endif %}
+		  {{ title_suffix }}
+		  <div class="row">
+			  {% block content %}
+				{{ content }}
+			  {% endblock %}
+		  </div>
+		</div>
+		<div class="feedback col-lg-6">
+			{{ feedback }}
+		</div>
+	</div>
+</div>
