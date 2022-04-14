@@ -27,6 +27,7 @@ height: inherit;
 }
 .jumbotron{background: none;}
 .navbar{padding: 0; justify-content: end;} 
+.navbar-dark .navbar-toggler{border-color: rgba(255,255,255,1);}
 
 
 /*Content*/
@@ -72,6 +73,8 @@ height: 800px;
 .feedback-compact .header-h2{width: fit-content;} 
 #block-webform{text-align: center;}
 .form-group{text-align: left;}
+.partners{text-align: center; overflow-x: auto;}
+.wrapper-partner{overflow-x: hidden;}
 
 
 /*Footer*/
@@ -93,17 +96,28 @@ background: url("/themes/custom/battle/images/icon_top.png") no-repeat;
  
 
 @media (max-width: 1200px) {
-	
+.screen6 .card{width: 100%!important;} 	
 
 } 
 
 @media (max-width: 992px) {
-
+.screen2 img {width: 50%;}
+.screen6{background-repeat: repeat-y;}
+.screen6 .card-title{font-size: 1.5rem;}
+.partners img{width: auto;}
+.screen4 .carousel-item .carousel-caption{top: 0;}
+.screen4{padding-top: 0!important;} 
 } 
  
 @media (max-width: 768px) {
-	
-
+.jumbotron h1{font-size: 50px;}	
+header{height: auto;}
+.screen2 .description{margin-top: 0;}
+.screen3 {height: 550px;}
+.screen2 img {width: 80%;}
+.screen6 .img-circle{text-align: center!important;}
+.screen4 .carousel-item {height: 682px;}
+.carousel-indicators{bottom: -70px;}
 }  
  
 @media (max-width: 576px) {
