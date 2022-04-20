@@ -1,4 +1,4 @@
-html{height: 100%; min-height: 33%;}
+html{height: 100%; min-height: 33%; scroll-behavior: smooth;}
 body{font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300;} 
 .material-icons.md-green { color: rgba(39, 179, 104, 1); }
 
@@ -65,7 +65,8 @@ height: 800px;
 .screen7 img,
 .partners img
 {width: 100%; height: auto;}
-.screen6{background: url("/themes/custom/battle/images/bg-6.jpg") no-repeat top center;}
+.screen6{background: url("/themes/custom/battle/images/bg-6.jpg") no-repeat center 80%; padding: 6rem 1rem;}
+.screen6 .card{background: rgba(0,0,0,.5); width: 90%;}
 .screen6 .card-subtitle{color: #33ff99!important;}
 .screen6 .data{width: fit-content;}
 .screen6 .card-title{font-size: 1.75rem;}
@@ -73,12 +74,17 @@ height: 800px;
 .feedback-compact .header-h2{width: fit-content;} 
 #block-webform{text-align: center;}
 .form-group{text-align: left;}
-.partners{text-align: center; overflow-x: auto;}
+.partners{text-align: center;}
 .wrapper-partner{overflow-x: hidden;}
 
 
 /*Footer*/
 footer{background: #f74c3c;}
+
+/*owl*/
+.owl-nav{display: flex; justify-content: center;}
+.owl-nav span{font-size: 60px; font-weight: 700; color: #fff;}
+.owl-prev span{padding-right: 2rem!important;}
  
  
  
@@ -107,7 +113,7 @@ background: url("/themes/custom/battle/images/icon_top.png") no-repeat;
 .partners img{width: auto;}
 .screen4 .carousel-item .carousel-caption{top: 0;}
 .screen4{padding-top: 0!important;} 
-} 
+.partners {overflow-x: auto;} 
  
 @media (max-width: 768px) {
 .jumbotron h1{font-size: 50px;}	

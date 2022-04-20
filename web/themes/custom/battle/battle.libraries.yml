@@ -14,6 +14,13 @@ custom:
     theme: 
       css/style.css: {}
   js:
-    js/full.js: {}
+    js/full.js: {} 
   dependencies:
     - core/jquery 
+    
+owl:
+  css:
+    theme: 
+      css/owl.carousel.min.css: {}
+  js: 
+    js/owl.carousel.min.js: {}
