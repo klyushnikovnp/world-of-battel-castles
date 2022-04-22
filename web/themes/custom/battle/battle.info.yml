@@ -7,7 +7,6 @@ base theme: stable
 libraries: 
   - battle/bootstrap
   - battle/custom
-  - battle/owl
  
 regions:
   header: Header

@@ -76,6 +76,24 @@ height: 800px;
 .form-group{text-align: left;}
 .partners{text-align: center;}
 .wrapper-partner{overflow-x: hidden;}
+.screen5 .card-sub-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.screen5 .card-sub-text:hover{
+	position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);	
+}	
 
 
 /*Footer*/
@@ -85,6 +103,8 @@ footer{background: #f74c3c;}
 .owl-nav{display: flex; justify-content: center;}
 .owl-nav span{font-size: 60px; font-weight: 700; color: #fff;}
 .owl-prev span{padding-right: 2rem!important;}
+
+
  
  
  
