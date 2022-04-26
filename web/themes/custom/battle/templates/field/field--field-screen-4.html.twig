@@ -1,28 +1,17 @@
-<div class="screen4 text-white py-5 d-flex align-items-start align-items-lg-center" id="screen4">
-	<div class="container px-0 px-lg-3">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-			{% for item in items %}
-				{% if loop.first %} 
-					<li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}" class="active"></li>
-				{% else %}
-					<li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"></li>
-				{% endif %}
-			{% endfor %}  
-		  </ol> 
-		  <div class="carousel-inner">
+<div class="screen4 py-5">			
+	<div class="container">
+		<div class="owl-carousel owl-theme">			
 			{% for item in items %}
 			  {{ item.content }}
 			{% endfor %}  
-		  </div>  
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Предыдущий</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Следующий</span>
-		  </a>
-		</div>
-	</div>
-</div>
+		</div>			
+		<div class="nav-clan">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			{% for item in items %}
+			<li class="nav-item" role="presentation">		
+			  <a href="#clan_{{ loop.index }}" class="nav-link text-white" >Раса #{{ loop.index }}</a>
+			{% endfor %}  
+			</li>
+		</div> 
+	</div>			
+</div>			

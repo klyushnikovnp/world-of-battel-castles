@@ -48,7 +48,7 @@ height: 800px;
 	background-color:rgba(0, 0, 0, .5);
 }
 
-.screen4{background: url("/themes/custom/battle/images/bg-4.jpg") no-repeat top center; height: 800px;}
+.screen4{background: url("/themes/custom/battle/images/bg-4.jpg") no-repeat top center;}
 .screen4:before
 {
 	content: '';
@@ -102,6 +102,7 @@ footer{background: #f74c3c;}
 /*owl*/
 .owl-nav{display: flex; justify-content: center;}
 .owl-nav span{font-size: 60px; font-weight: 700; color: #fff;}
+.hero .owl-nav span{color: #000!important;}
 .owl-prev span{padding-right: 2rem!important;}
 
 
