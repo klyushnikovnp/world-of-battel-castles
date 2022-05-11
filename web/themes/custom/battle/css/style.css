@@ -25,10 +25,10 @@ header{
 background-size: cover;
 height: inherit;
 }
-.jumbotron{background: none;}
+.jumbotron{background-color:rgba(0, 0, 0, .7); margin-top: 12rem;}
 .navbar{padding: 0; justify-content: end;} 
 .navbar-dark .navbar-toggler{border-color: rgba(255,255,255,1);}
-.bg-header{top:0; left:0; bottom:0; width: 100%;}
+.bg-header{top:0; left:0; bottom:0; width: 100%; z-index: -1;}
 .video-block{
 z-index: -1;
 inset: 0px;
@@ -51,12 +51,20 @@ opacity: 1;
 width: 100%;
 height: auto;	
 }
+.language-switcher-language-url{position: absolute; top: 2%; left: 2%;}
 
 
 /*Content*/
-.screen2{background: url("/themes/custom/battle/images/bg-21.jpg") no-repeat top center; }
+.screen2{background: url("/themes/custom/battle/images/bg-21.jpg") no-repeat top center; position: relative;}
 .screen2 .description{margin-top: 7rem;}
 .screen2 img{width: 100%; height: auto;}
+.screen2:before {
+    content: '';
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+}	
 .screen3{
 background: url("/themes/custom/battle/images/bg-31.jpg") no-repeat top center; 
 background-size: cover;
