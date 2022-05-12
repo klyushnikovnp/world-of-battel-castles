@@ -1,0 +1,13 @@
+<div class="d-flex align-items-center h-100">
+	<ul{{ attributes.addClass('nav nav-pills') }}>
+	{% for item in links %}
+	  <li{{ item.attributes.addClass('nav-item') }}>
+		{% if item.link %}
+		  {{ item.link }}
+		{% else %}
+		  {{ item.text }}
+		{% endif %}
+	  </li>
+	{% endfor %}
+	</ul>
+</div>

@@ -1,9 +1,16 @@
 <div class="col-6 col-lg-4">  
   {% block content %}
   {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home">
-      <img src="{{ site_logo }}" alt="{{ 'Главная'|t }}" />
-    </a>
+  <div class="row align-items-center">
+		<div class="col-4">
+			<a href="{{ path('<front>') }}" rel="home">
+			  <img src="{{ site_logo }}" alt="{{ 'Главная'|t }}" />
+			</a>
+		</div>	
+		<div class="col-4">
+			<a href="{{ path('<front>') }}" rel="home" class="text-white">Centurion Game Studio</a>	
+		</div>	
+	</div>	
   {% endif %}
   {% endblock %}
 </div>

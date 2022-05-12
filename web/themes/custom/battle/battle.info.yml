@@ -10,6 +10,7 @@ libraries:
   - battle/owl
  
 regions:
+  top_line: Top Line
   header: Header
   content: Content
   left_sidebar: Left Sidebar  

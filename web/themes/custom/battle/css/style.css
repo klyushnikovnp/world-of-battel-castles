@@ -17,6 +17,7 @@ body{font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300;}
 .p72{font-size: 72px;}
 .p200{font-size: 200px;}
 .bold{font-weight: 700;}
+.bg-black{background-color:rgba(0, 0, 0, .7);}
 
 /*Header*/
 
@@ -25,7 +26,8 @@ header{
 background-size: cover;
 height: inherit;
 }
-.jumbotron{background-color:rgba(0, 0, 0, .7); margin-top: 12rem;}
+.jumbotron{margin-top: 12rem;}
+.top-line{background-color:rgba(0, 0, 0, .3);}
 .navbar{padding: 0; justify-content: end;} 
 .navbar-dark .navbar-toggler{border-color: rgba(255,255,255,1);}
 .bg-header{top:0; left:0; bottom:0; width: 100%; z-index: -1;}
@@ -51,12 +53,12 @@ opacity: 1;
 width: 100%;
 height: auto;	
 }
-.language-switcher-language-url{position: absolute; top: 2%; left: 2%;}
-
+.language-switcher-language-url{position: absolute; top: 2%; left: 2%; height: 9%;}
+.top-line nav li{margin-right: 2rem; font-size: 20px;}
 
 /*Content*/
 .screen2{background: url("/themes/custom/battle/images/bg-21.jpg") no-repeat top center; position: relative;}
-.screen2 .description{margin-top: 7rem;}
+.screen2 .description{margin-top: 7rem; padding: 3rem; border-radius: 8px;}
 .screen2 img{width: 100%; height: auto;}
 .screen2:before {
     content: '';

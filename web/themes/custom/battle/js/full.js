@@ -3,6 +3,7 @@
 	
 	$(".carousel-item:first").addClass('active');
 	$(".img-circle>img").addClass('rounded-circle');
+	$("ul.links>li>a.is-active").addClass('active').removeClass('is-active');
 	
 	/*install owl-carousel*/
 	$(document).ready(function(){

@@ -13,3 +13,18 @@ function battle_preprocess_block__contacts_block(&$variables) {
 		->view($block);
 	}	
 }  
+
+
+/*
+* @Фуркция переопределяет название языков в переключателе Ru/En
+* 
+*/ 
+function battle_preprocess_links__language_block(&$variables) {
+	$classes = 'nav-link btn btn-outline-light btn-sm mr-2';		
+
+	$variables['links']['en']['link']['#title'] = "En";
+	$variables['links']['ru']['link']['#title'] = "Ru";
+	$variables['links']['en']['link']['#options']['attributes']['class'][] = $classes;
+	$variables['links']['ru']['link']['#options']['attributes']['class'][] = $classes;
+}	
+

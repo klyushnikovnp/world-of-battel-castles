@@ -1,5 +1,9 @@
-<div class="jumbotron mx-auto text-right text-white">
-  <p class="lead">{{ label|upper  }}</p>
-  <h1 class="display-4 p72 bold">{{ content }}</h1>
-  <a class="btn btn-danger btn mt-3" href="#screen2" role="button">ПОДРОБНЕЕ</a> 
+<div class="container">
+	<div class="row">
+		<div class="jumbotron mx-auto text-right text-white bg-black">
+		  <p class="lead">{{ content.field_sub_header }}</p>
+		  <h1 class="display-4 p72 bold">{{ content.body }}</h1>
+		  <a class="btn btn-danger btn mt-3" href="#screen2" role="button">{{ content.field_name_link }}</a>  
+		</div>
+	</div>
 </div>
