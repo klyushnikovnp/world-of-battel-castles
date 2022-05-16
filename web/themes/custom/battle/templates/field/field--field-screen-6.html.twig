@@ -1,7 +1,9 @@
-<div class="screen6 py-5">
+<div class="screen6 py-5 bg-white position-relative" id="screen6">
 	<div class="row mx-0">
 		{% for item in items %}
-		   {{ item.content }}
+			<div class="phase-{{ loop.index }} position-absolute" id="phase-{{ loop.index }}">
+			{{ item.content }}
+		   </div>
 		{% endfor %}
 	</div>
 </div>

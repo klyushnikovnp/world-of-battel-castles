@@ -8,6 +8,7 @@ libraries:
   - battle/bootstrap
   - battle/custom
   - battle/owl
+  - battle/fancybox
  
 regions:
   top_line: Top Line

@@ -1,12 +1,13 @@
 <div class="screen2 text-white py-5" id="screen2">
 	<div class="container">
 		<div class="row"> 
-			<div class="col-12 col-lg-6 description bg-black">
-				<h3 class="mb-4">{{ content.field_header }}</h3>
+			<div class="col-12 col-lg-8 description bg-black mx-auto">
+				<h3 class="mb-4 p40 text-center">{{ content.field_header }}</h3>
 				{{ content.field_description }}
-				<div class="link-store">{{ content.field_link }}</div>
+				<div class="link-store text-center">
+					<a class="btn btn-danger btn mt-3" href="{{ content.field_link }}" role="button" target="_black">Перейти на сайт игры</a>
+				</div>
 			</div>
-			<div class="col-12 col-lg-6">{{ content.field_photo }}</div>
 		</div>
 	</div>
 </div>

@@ -1,17 +1,17 @@
 <div class="top-line py-2">
-	<div class="container">
-		<div class="row align-items-start align-items-md-center">
-			{{ page.top_line }}
+	<div class="top-line-in position-relative">
+		<div class="container">
+			<div class="row align-items-start align-items-md-center">
+				{{ page.top_line }}
+			</div>
 		</div>
 	</div>
 </div>
-<header class="pt-3">
-<div class="bg-header position-absolute">
-<div class="video-block">
+<header class="pt-3" id="screen1">
+<div class="bg-header position-fixed">
 	<video height="100%" width="auto"  no-controls autoplay loop playsinline muted>
-	<source src="/themes/custom/battle/images/bg-1.mp4" type='video/mp4' />
+		<source src="/themes/custom/battle/images/bg-1.mp4" type='video/mp4' />
 	</video>
-</div>
 </div>
 	<div class="container">
 		<div class="row align-items-start align-items-md-center">
@@ -33,7 +33,7 @@
 	</div>
 </main>
 
-<footer class="mt-5">
+<footer class="">
 	<div class="container h-100">
 		{{ page.footer }}
 	</div>

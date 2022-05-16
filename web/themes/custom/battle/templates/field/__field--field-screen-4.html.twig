@@ -1,0 +1,17 @@
+<div class="screen4" id="screen4">			
+	<div class="container">
+		<div class="owl-carousel owl-theme">			
+			{% for item in items %}
+			  {{ item.content }}
+			{% endfor %}  
+		</div>			
+		<div class="nav-clan">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			{% for item in items %}
+			<li class="nav-item" role="presentation">		
+			  <a href="#clan_{{ loop.index }}" class="nav-link text-white" >Раса #{{ loop.index }}</a>
+			{% endfor %}  
+			</li>
+		</div> 
+	</div>			
+</div>			

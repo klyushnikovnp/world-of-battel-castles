@@ -5,6 +5,10 @@
 	$(".img-circle>img").addClass('rounded-circle');
 	$("ul.links>li>a.is-active").addClass('active').removeClass('is-active');
 	
+	$(".screen4>.container>.owl-carousel>.owl-nav>button").addClass('btn btn-outline-light btn-sm');
+	$(".screen4>.container>.owl-carousel>.owl-nav").css('border', '1px solid red');
+	
+	
 	/*install owl-carousel*/
 	$(document).ready(function(){
 		$('.owl-carousel').owlCarousel({
@@ -28,9 +32,9 @@
 	/*fixed block*/
 	$(window).scroll(function(){
 		if ($(window).scrollTop() > 145){
-			$('.branding').addClass('position-fixed fx');
+			$('.top-line').addClass('position-fixed fx');
 		} else {
-			$('.branding').removeClass('position-fixed fx');
+			$('.top-line').removeClass('position-fixed fx');
 		}
 	});	
 	
@@ -48,5 +52,7 @@
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;
 	});		
+	
+	$('[data-toggle="tooltip"]').tooltip();
  
 })(jQuery);

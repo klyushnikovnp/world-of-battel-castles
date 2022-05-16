@@ -4,7 +4,9 @@ bootstrap:
     theme:
       css/bootstrap.min.css: {}
   js:
+    js/popper.min.js: {}  
     js/bootstrap.min.js: {}
+    js/util.js: {}    
   dependencies:
     - core/jquery
     
@@ -24,3 +26,13 @@ owl:
       css/owl.carousel.min.css: {}
   js: 
     js/owl.carousel.min.js: {}
+    
+    
+fancybox:
+  css:
+    theme: 
+      https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css: { type: external } 
+      
+  header: true      
+  js: 
+    https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js: { type: external }    
