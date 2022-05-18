@@ -11,6 +11,15 @@ function battle_preprocess_block__contacts_block(&$variables) {
 	  $variables['feedback'] = \Drupal::entityTypeManager()
 		->getViewBuilder('block')
 		->view($block);
+
+	  $block = \Drupal\block\Entity\Block::load('feedback_en');
+	  $variables['feedback_en'] = \Drupal::entityTypeManager()
+		->getViewBuilder('block')
+		->view($block);		
+		$language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+		
+		if($language == "ru"){$variables['lang'] = true;}	
+		else{$variables['lang'] = false;}
 	}	
 }  
 
@@ -28,3 +37,5 @@ function battle_preprocess_links__language_block(&$variables) {
 	$variables['links']['ru']['link']['#options']['attributes']['class'][] = $classes;
 }	
 
+
+	

@@ -117,7 +117,7 @@ height: 910px;
 .screen6 .phase-5{bottom: 15%; left: 43%;}
 .screen7 h5{font-size: 2.5rem; color: #333;}
 .feedback-compact .header-h2{width: fit-content;} 
-#block-webform{text-align: center;}
+#block-webform, #block-feedback-en{text-align: center;}
 .form-group{text-align: left;}
 .partners{text-align: center;}
 .wrapper-partner{overflow-x: hidden;}

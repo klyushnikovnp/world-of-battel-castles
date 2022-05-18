@@ -2,13 +2,6 @@
 	<div class="container py-5 feedback-compact"> 
 		<div class="row"> 
 			<div class="contacs col-lg-6 mb-4">
-			  {{ title_prefix }}
-			  {% if label %}
-				 <div class="mx-auto header-h2"> 
-					<h2{{ title_attributes }}>{{ label }}</h2>
-				</div>
-			  {% endif %}
-			  {{ title_suffix }}
 			  <div class="row mx-0">
 				  {% block content %}
 					{{ content }}
@@ -16,7 +9,11 @@
 			  </div>
 			</div>
 			<div class="feedback col-lg-6 mb-4">
+			{% if lang %}			
 				{{ feedback }}
+			{% else %}
+				{{ feedback_en }}
+			{% endif %}	
 			</div>
 		</div>
 	</div>
