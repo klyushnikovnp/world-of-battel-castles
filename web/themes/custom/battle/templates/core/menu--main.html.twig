@@ -6,12 +6,12 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('navbar-nav') }}>
+      <ul{{ attributes.addClass('navbar-nav mt-3 mt-lg-0') }}>
     {% else %}
       <ul>
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes.addClass('nav-item text-right text-md-left') }}>
+      <li{{ item.attributes.addClass('nav-item text-right text-lg-left') }}>
         {{ link(item.title, item.url, item.attributes.addClass('nav-link text-white')) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

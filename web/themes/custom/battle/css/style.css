@@ -28,10 +28,12 @@ height: inherit;
 }
 /*.fx{background-color: #5b5b5b!important; width: 100%; z-index: 100;}*/
 .fx{background-color:rgba(0, 0, 0, .5)!important; width: 100%; z-index: 100;}
+.small-box{height: 75px;}
+.small-img{width: 56%; height: auto;}
 .jumbotron{margin-top: 12rem; background-color:rgba(0, 0, 0, .5);}
 .top-line{background-color:rgba(0, 0, 0, .3);}
 .navbar{padding: 0; justify-content: end;} 
-.navbar-dark .navbar-toggler{border-color: rgba(255,255,255,1);}
+.navbar-dark .navbar-toggler{border-color: rgba(255,255,255,1);} 
 .bg-header{
 position: fixed;
 top: 0;
@@ -44,7 +46,7 @@ z-index: -1;
 background-size: cover;	
 }
 .bg-header video{
-top: 0;
+top: 0; 
 left: 0;
 width: 100%;
 height: 100%;
@@ -167,20 +169,37 @@ background: url("/themes/custom/battle/images/icon_top.png") no-repeat;
 }
  
 
+@media (max-width: 1500px) {
+.logo{justify-content: center;} 	
+
+} 
+
+@media (max-width: 1300px) {
+.logo{justify-content: end;} 	
+
+} 
+
 @media (max-width: 1200px) {
+.logo img{width: 100%; height: auto;} 	
 .screen6 .card{width: 100%!important;} 	
 
 } 
 
 @media (max-width: 992px) {
+.logo{justify-content: start;} 
+.screen2 {padding-top: 5rem!important;}
 .screen2 img {width: 50%;}
-.screen6{background-repeat: repeat-y;}
+.screen6{background-repeat: repeat-y; height: auto;}
 .screen6 .card-title{font-size: 1.5rem;}
 .partners img{width: auto;}
 .screen4 .carousel-item .carousel-caption{top: 0;}
-.screen4{padding-top: 0!important;} 
 .partners {overflow-x: auto;} 
- 
+.top-line nav li{margin-right: 0;}
+.language-switcher-language-url{top: unset; bottom: 3%; left: 5%; display: none;}
+.screen6>.row>div[class^="phase"]{position: static!important; width: 100%;}
+} 
+
+
 @media (max-width: 768px) {
 .jumbotron h1{font-size: 50px;}	
 header{height: auto;}
@@ -190,10 +209,13 @@ header{height: auto;}
 .screen6 .img-circle{text-align: center!important;}
 .screen4 .carousel-item {height: 682px;}
 .carousel-indicators{bottom: -70px;}
+.screen4{background: url("/themes/custom/battle/images/bg-41.jpg") repeat-y top center;}
 }  
  
 @media (max-width: 576px) {
-
+.screen2 {padding-bottom: 0!important;}
+.screen2 .description {margin-bottom: 8rem;}
+.logo{font-size: 14px;}
 }
 
 

@@ -1,1 +1,15 @@
-<button class="btn btn-danger btn" type="button" data-toggle="tooltip" data-placement="top" data-html="true" title="<h5>{{ content.field_header }}</h5><h6>{{ content.field_sub_header }}</h6>{{ content.field_description }}">{{ content.field_link }}</button> 
+<button class="btn btn-danger d-none d-lg-block" type="button" data-toggle="tooltip" data-placement="top" data-html="true" title="<h5>{{ content.field_header }}</h5><h6>{{ content.field_sub_header }}</h6>{{ content.field_description }}">{{ content.field_link }}</button> 
+<div class="d-block d-lg-none bg-black text-white mb-3 rounded p-3">
+	<div class="container">
+		<div class="row">
+			<div class="mb-3 col-12 px-0 px-md-3">
+				<button class="btn btn-danger btn-sm">{{ content.field_link }}</button> 
+			</div>	
+			<div class="col-md-4 px-0 px-md-3">
+				<h5>{{ content.field_header }}</h5>
+				<h6>{{ content.field_sub_header }}</h6>
+			</div>
+			<div class="col-md-8 px-0 px-md-3">{{ content.field_description }}</div>
+		</div>
+	</div>
+</div>
